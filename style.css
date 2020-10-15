@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;800&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0; 
+    padding: 0;
+    font-family: Raleway , sans-serif;
+}
+
+*:focus{
+    outline: none; 
+}
+
+label{
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+input{
+    
+    width: 45%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+#container{
+   width: 45%;
+   margin: 0 auto;
+}
+
+#title{
+    letter-spacing: 0.3rem;
+    font-size: 24px;
+    background-color: beige;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+#description{
+
+    border-left: beige 5px solid;
+    padding-left: 10px;
+
+}
+
+#survey-form{
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+#radio input, #radio label{
+    
+    margin: 20px 5px 10px 0px;
+    width: auto;
+}
+
+
+#checkbox input, #checkbox label{
+    margin: 10px 5px 20px 0px;
+    width: auto;
+}
+
+#dropdown{
+    max-width: 45%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+
+@media only screen and (max-width: 600px){
+    #survey-form{
+        padding:0 15px;
+    }
+    #container{
+        width: 100%;
+    }
+   
+    input{
+        width: 100%;
+        padding:10px;
+    }
+    #checkbox{
+        display: flex;
+    }
+    #dropdown{
+        width: 100%;
+    }
+}
